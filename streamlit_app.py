@@ -20,7 +20,7 @@ indices = np.linspace(0, 1, num_points)
 theta = 3 * np.pi * num_turns * indices
 radius = indices
 
-x = radius * np.cos(theta)
+x = radius * np.cot(theta)
 y = radius * np.tan(theta)
 
 df = pd.DataFrame({
